@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Campus Carbon Footprint Calculator</title>
+  <link rel="stylesheet" href="carbon.css" />
+</head>
+<body>
+
+  
+  <div id="welcome-screen">
+    <h1>Welcome to the Campus Carbon Footprint Calculator</h1>
+    <button id="enter-site">Enter</button>
+  </div>
+
+
+  <div id="main-site" class="hidden">
+<nav>
+  <div class="logo">🧮 CarbonTrackr </div>
+  <a href="#Home">Home</a>
+  <a href="#Calculator">Calculator</a>
+  <a href="#Tips">Tips</a>
+  <a href="#Feedback">Feedback</a>
+</nav>
+
+
+  <section id="Home">
+  <h1>Welcome to the Campus Carbon Footprint Calculator</h1>
+  <p>
+    Our goal is to help students and staff understand their carbon footprint on campus and provide simple, practical tips to reduce it.
+  </p>
+  <p>
+    With CarbonTracker, you can easily calculate your monthly electricity use, weekly transport distance, and paper consumption, then receive personalized advice.
+  </p>
+  <p>
+    Together, we can create a greener campus and contribute to a healthier planet.
+  </p>
+  <p>
+    Navigate through the sections above to start calculating, learn helpful tips, meet the founders, or share your valuable feedback.
+  </p>
+  <img src="img/a_person_holding_a_calculator_and_a.jpeg.jpg" alt="img">
+  <img src="img/JAN23-How-to-Reduce-Carbon-Footprint-as-a-Student-1.webp" alt="img">
+  <img src="img/Screenshot 2025-05-24 143044.png" alt="img">
+</section>
+
+
+    <section id="Calculator" class="hidden">
+      <h2>Campus Carbon Footprint</h2>
+      <form>
+        <label for="electricity">Electricity Usage (kWh/month):</label>
+        <input type="number" id="electricity" name="electricity" />
+
+        <label for="transport">Transport Distance (km/week):</label>
+        <input type="number" id="transport" name="transport" />
+
+        <label for="paper">Paper Usage (sheets/month):</label>
+        <input type="number" id="paper" name="paper" />
+
+        <input type="submit" value="Calculate" />
+      </form>
+      <div id="result"></div>
+    </section>
+
+    <section id="Tips" class="hidden">
+      <h2>Tips to Reduce Carbon Usage</h2>
+      <ol>
+        <li>Turn off lights and devices when not in use.</li>
+        <li>Walk or bike instead of using motor vehicles on campus.</li>
+        <li>Participate in campus recycling and tree-planting drives.</li>
+        <li>Use reusable bottles, bags, and utensils.</li>
+        <li>Minimize Food Waste.</li>
+        <li>Regularly service your car and keep tires properly inflated.</li>
+        <li>Turn off lights and unplug appliances when not in use.</li>
+      </ol>
+      <img src="img/leg.jpg"  alt="img">
+      <img src="img/12.jpeg" alt="img">
+      <img src="img/photo.jpg" alt="img">
+    </section>
+
+    <section id="Feedback" class="hidden">
+  <h2>Feedback</h2>
+  <p>We'd love to hear your thoughts on how we can make this project better!</p>
+  
+  <form id="feedbackForm" action="https://formspree.io/f/xvgajkvd" method="POST">
+  <label for="name">Your Name:</label>
+  <input type="text" name="name" required />
+
+  <label for="email">Your Email:</label>
+  <input type="email" name="email" required />
+
+  <label for="message">Your Feedback:</label>
+  <textarea name="message" rows="4" required></textarea>
+
+  <button type="submit">Submit Feedback</button>
+</form>
+
+  <div id="thankYouMessage" style="display:none; margin-top: 10px; color: green;">
+    Thank you for your feedback! 🌱
+    
+  </div>
+</section>
+
+  </div>
+</body>
+  <script src="script.js"></script>
+</html>
